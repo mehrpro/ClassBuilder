@@ -34,6 +34,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DataBaseComboBox = new System.Windows.Forms.ComboBox();
             this.ConnectButton = new System.Windows.Forms.Button();
+            this.SelectAllCheckBox = new System.Windows.Forms.CheckBox();
             this.UserIDCheckBox = new System.Windows.Forms.CheckBox();
             this.DataBaseLabel = new System.Windows.Forms.Label();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
@@ -44,7 +45,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.TablesCheckedList = new System.Windows.Forms.CheckedListBox();
-            this.SelectAllCheckBox = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -125,6 +125,17 @@
             this.ConnectButton.Text = "Connect";
             this.ConnectButton.UseVisualStyleBackColor = true;
             this.ConnectButton.Click += new System.EventHandler(this.ConnectButton_Click);
+            // 
+            // SelectAllCheckBox
+            // 
+            this.SelectAllCheckBox.AutoSize = true;
+            this.SelectAllCheckBox.Location = new System.Drawing.Point(26, 111);
+            this.SelectAllCheckBox.Name = "SelectAllCheckBox";
+            this.SelectAllCheckBox.Size = new System.Drawing.Size(83, 20);
+            this.SelectAllCheckBox.TabIndex = 3;
+            this.SelectAllCheckBox.Text = "Select All";
+            this.SelectAllCheckBox.UseVisualStyleBackColor = true;
+            this.SelectAllCheckBox.CheckedChanged += new System.EventHandler(this.SelectAllCheckBox_CheckedChanged);
             // 
             // UserIDCheckBox
             // 
@@ -233,18 +244,6 @@
             this.TablesCheckedList.Name = "TablesCheckedList";
             this.TablesCheckedList.Size = new System.Drawing.Size(882, 375);
             this.TablesCheckedList.TabIndex = 0;
-            // 
-            // SelectAllCheckBox
-            // 
-            this.SelectAllCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SelectAllCheckBox.AutoSize = true;
-            this.SelectAllCheckBox.Location = new System.Drawing.Point(26, 111);
-            this.SelectAllCheckBox.Name = "SelectAllCheckBox";
-            this.SelectAllCheckBox.Size = new System.Drawing.Size(83, 20);
-            this.SelectAllCheckBox.TabIndex = 3;
-            this.SelectAllCheckBox.Text = "Select All";
-            this.SelectAllCheckBox.UseVisualStyleBackColor = true;
-            this.SelectAllCheckBox.CheckedChanged += new System.EventHandler(this.SelectAllCheckBox_CheckedChanged);
             // 
             // MainForm
             // 
