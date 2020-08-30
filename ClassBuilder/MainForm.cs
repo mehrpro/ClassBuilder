@@ -115,7 +115,7 @@ namespace ClassBuilder
             classLines.Add("{");
             classLines.Add("\tpublic class " + table + "Repository : GenericRepository<" + GetSingularName(table) + ">,I"+table+"Repository");
             classLines.Add("\t{");
-            classLines.Add("\t\tpublic "+table+"Repository():base(){\"name=mySQL\"}");
+            classLines.Add("\t\tpublic "+table+ "Repository():base(\"name=mySQL\"){}");
             foreach (var column in columns)
             {
                 var dataType = ConvertSQLDataTypeToCLR(column.DataType, column.IsNullable);
